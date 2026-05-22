@@ -1,0 +1,311 @@
+.hideMessage {
+  display: none;
+}
+
+.showMessage {
+  display: block;
+  color: var(-- whiteColor);
+  padding: 10px;
+  background: 255, 0, 0;
+  border-radius: 13px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Manrope";
+  color: #1D2254;
+}
+
+.background-image-div {
+  float: right;
+  height: 100vh;
+  width: 64vw;
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  float: right;
+  height: auto;
+}
+
+.login-container {
+  position: absolute;
+  width: 100%;
+  height: 47.5vw;
+}
+
+.grey-box {
+  width: 75vw;
+  height: 40vw;
+  margin-left: 7vw;
+  margin-top: 6.6vw;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25), inset 0px 0px 0.5vw 0.25vw rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(0.1vw);
+  backdrop-filter: blur(0.3vw);
+  border-radius: 1vw;
+}
+
+.login-content {
+  height: 37vw;
+  margin-left: 3.55vw;
+  width: 22.1vw;
+}
+
+.one {
+  padding-top: 0.85vw;
+  width: 100;
+  height: 8vw;
+}
+
+.form {
+  width: 100%;
+  height: 16.8vw;
+}
+
+.login-heading {
+  position: relative;
+  font-weight: 800;
+  font-size: 1.9vw;
+  margin-top: 2vw;
+}
+
+.au-heading {
+  position: relative;
+  font-weight: 500;
+  font-size: 0.81vw;
+  margin-top: 0.65vw;
+}
+
+.fields{
+  margin-top: 3.6vw;
+}
+
+/* Default input field styles */
+.login-input1, .login-input2 {
+  outline: none;
+  border: 0px solid #E8E8E8; 
+  width: 100%;
+  height: 2.8vw;
+  background: #E8E8E8;
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding-left: 2vw;
+  transition: border-color 0.3s ease; 
+}
+
+/* Placeholder styles */
+.login-input1::placeholder, .login-input2::placeholder {
+  font-weight: 500;
+  font-size: 0.8vw;
+}
+
+/* Focus styles */
+.login-input1:focus, .login-input2:focus {
+  outline: none;
+  border-color: rgb(0, 0, 136); 
+}
+
+.login-input2 {
+  margin-top: 1.5vw;
+}
+
+
+/* Second input field specific styles */
+/* Create a custom checkbox */
+
+.remember-me-checkbox {
+  display: none;
+}
+
+
+.remember-me-label {
+  display: inline-block;
+  width: 1.1vw;
+  height: 1.1vw;
+  background-color: transparent;
+  border-radius: 4px; /* Adjust for square or rounded corners */
+  border: 2px solid #BCBEC3; /* Custom border style */
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remember-me-label::after {
+  content: '';
+  display: block;
+  width: 0.4vw; /* Width of the checkmark */
+  height: 0.4vw; /* Height of the checkmark */
+  border: solid rgb(0, 2, 121);
+  border-width: 0 0.2vw 0.2vw 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0.1vw;
+  left: 0.2vw;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.2s; /* Smooth transition for visibility */
+  
+}
+.remember-me-checkbox:checked + .remember-me-label::after {
+  opacity: 1;
+}
+
+
+.fieldBottomLines{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.8vw;
+}
+
+
+
+.rememberMeDiv {
+  display: inline-block;
+  font-weight: 500;
+  width: 9vw;
+  display: flex;
+  align-items: center; /* Center the child divs vertically if needed */
+}
+
+.remember-me-text {
+  margin-left: 0.4vw;
+  font-size: 0.72vw;
+
+}
+
+.forget-password-link {
+  font-weight: 500;
+  color: #1D2254;
+  font-size: 0.72vw;
+  align-self:self-end;
+  width: 7vw;
+  padding-right: 0;
+  margin-right: 0;
+  border-right: 0;
+
+
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+  cursor: pointer; /* Ensure it looks clickable */
+  padding: 0; /* Remove any padding */
+  border: none; /* Remove any border */
+  background: none; /* Remove any background */
+}
+
+
+/* Hover effect */
+.forget-password-link:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+  background-color: transparent;
+}
+
+
+
+
+
+
+.login-button {
+  position: relative;
+  color: white;
+  width: 100%;
+  height: 2.75vw;
+  background: #1D2254;
+  border: 1px solid #1D2254;
+  border-radius: 7px;
+  margin-top: 2vw;
+  font-size: 0.8vw;
+}
+
+.signin-heading {
+  position: relative;
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: #1D2254;
+  margin-top: 0.8vw;
+  margin-left: 8.75vw;
+}
+
+.last {
+  width: 100;
+  height: 11vw;
+}
+
+.loginOptions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.google-logo-button, .uni-logo-button {
+  position: relative;
+  width: 10vw;
+  height: 2.75vw;
+  background: #E8E8E8;
+  border: 1px solid #E8E8E8;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-uni {
+  margin-top: 0.1vw;
+  width: 2.4vw;
+  height: 2vw;
+}
+
+.image-google {
+  width: 2vw;
+}
+
+
+.lastBox{
+  margin-top: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content:left;
+}
+
+.last-heading {
+  position: relative;
+  font-weight: 500;
+  font-size: 11px;
+  color: #1D2254;
+  font-size: 0.75vw;
+  display: inline-block;
+} 
+
+
+.signup{
+  width: 9vw;
+  display: inline-block;
+  color: #1D2254;
+  font-weight: 500;
+  font-size: 11px;
+  color: #1D2254;
+  font-size: 0.75vw;
+  display: inline-block;
+  padding-left: 0.3vw;
+}  
+
+
+
+
+@media screen and (max-width: 1470px) {
+  .background-image {
+    width: auto;
+    float: right;
+    height: 100%;
+  }
+}
