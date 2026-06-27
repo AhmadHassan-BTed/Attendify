@@ -304,3 +304,5 @@ To maintain clean repository standards, new contributions are welcomed under the
 * Branches should be named descriptively (e.g. `feature/attendance-alerts`).
 * Code formatting should follow standard PHP PSR-12 guidelines.
 * Pull requests must be fully documented, stating what adjustments were made and linking back to the relevant system flow or module.
+* Collaborative feedback and UI designs are contributed in partnership with **Nimra Marrium**.
+
