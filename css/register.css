@@ -1,0 +1,178 @@
+.hideMessage {
+    display: none;
+}
+
+.showMessage {
+    display: block;
+    color: white;
+    padding: 10px;
+    background: rgb(255, 0, 0);
+    border-radius: 13px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Manrope", sans-serif;
+    color: #1D2254;
+}
+
+.background-image-div {
+    float: right;
+    height: 100vh;
+    width: 64vw;
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    float: right;
+    height: auto;
+}
+
+.login-container {
+    position: absolute;
+    width: 100%;
+    height: 47.5vw;
+}
+
+/* Changed to height: auto to accommodate 4 inputs instead of 2 */
+.grey-box {
+    width: 75vw;
+    height: auto;
+    min-height: 44vw;
+    padding-bottom: 3vw;
+    margin-left: 7vw;
+    margin-top: 6.6vw;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25), inset 0px 0px 0.5vw 0.25vw rgba(0, 0, 0, 0.15);
+    -webkit-backdrop-filter: blur(0.1vw);
+    backdrop-filter: blur(0.3vw);
+    border-radius: 1vw;
+}
+
+.login-content {
+    height: auto;
+    margin-left: 3.55vw;
+    width: 22.1vw;
+}
+
+.one {
+    padding-top: 0.85vw;
+    width: 100%;
+    height: 8vw;
+}
+
+/* Adjusted for taller form */
+.form {
+    width: 100%;
+    height: auto;
+}
+
+.login-heading {
+    position: relative;
+    font-weight: 800;
+    font-size: 1.9vw;
+    margin-top: 2vw;
+}
+
+.au-heading {
+    position: relative;
+    font-weight: 500;
+    font-size: 0.81vw;
+    margin-top: 0.65vw;
+}
+
+.fields {
+    margin-top: 3.6vw;
+}
+
+/* Default input field styles */
+.login-input1,
+.login-input2 {
+    outline: none;
+    border: 0px solid #E8E8E8;
+    width: 100%;
+    height: 2.8vw;
+    background: #E8E8E8;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding-left: 2vw;
+    transition: border-color 0.3s ease;
+}
+
+/* Placeholder styles */
+.login-input1::placeholder,
+.login-input2::placeholder {
+    font-weight: 500;
+    font-size: 0.8vw;
+}
+
+/* Focus styles */
+.login-input1:focus,
+.login-input2:focus {
+    outline: none;
+    border-color: rgb(0, 0, 136);
+    border: 1px solid rgb(0, 0, 136);
+}
+
+.login-input2 {
+    margin-top: 1.5vw;
+}
+
+.login-button {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 2.75vw;
+    background: #1D2254;
+    border: 1px solid #1D2254;
+    border-radius: 7px;
+    margin-top: 2vw;
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+
+.last {
+    width: 100%;
+    height: auto;
+}
+
+.lastBox {
+    margin-top: 2vw;
+    /* Adjusted from 5vw to pull it up slightly closer to the register button */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.last-heading {
+    position: relative;
+    font-weight: 500;
+    color: #1D2254;
+    font-size: 0.75vw;
+    display: inline-block;
+    margin: 0;
+}
+
+.signup {
+    width: auto;
+    display: inline-block;
+    color: #1D2254;
+    font-weight: 500;
+    font-size: 0.75vw;
+    display: inline-block;
+    padding-left: 0.4vw;
+}
+
+@media screen and (max-width: 1470px) {
+    .background-image {
+        width: auto;
+        float: right;
+        height: 100%;
+    }
+}
