@@ -17,7 +17,7 @@
 
 ---
 
-## 🌟 The Human Connection & Project Vibe
+##  The Human Connection & Project Vibe
 
 Behind every attendance entry, every percentage calculation, and every database row lies a human story. A classroom is not just a collection of registration IDs; it is a community of students pursuing their aspirations and teachers dedicating their expertise to guide them.
 
@@ -27,7 +27,7 @@ This **Attendance & Leave Management Portal** was developed by **Ahmad Hassan (B
 
 ---
 
-## 🖥️ System Preview & UI Overview
+##  System Preview & UI Overview
 
 The interface prioritizes clarity, utilizing a structured sidebar, real-time statistics cards, and a modern data grid to display student records.
 
@@ -39,7 +39,7 @@ The interface prioritizes clarity, utilizing a structured sidebar, real-time sta
 
 ---
 
-## 📐 Architecture Overview
+##  Architecture Overview
 
 The portal implements a classic **Client-Server Architecture** optimized for local deployment and low latency. The frontend client communicates with the server via structured HTTP requests, utilizing an asynchronous AJAX pipeline for dynamic view updates.
 
@@ -77,7 +77,7 @@ graph TD
 
 ---
 
-## 🔄 System Workflow & Request Lifecycle
+##  System Workflow & Request Lifecycle
 
 The system utilizes an asynchronous api-action routing system. Below is the step-by-step Request/Response Lifecycle representing how attendance is fetched, rendered, and recorded.
 
@@ -118,7 +118,7 @@ sequenceDiagram
 
 ---
 
-## 🗄️ Relational Database Schema
+##  Relational Database Schema
 
 The core database design is modeled to reflect real-world university relationships: Departments house Courses; Teachers teach registered Courses; Students register for Courses; and Attendance is logged against daily classes, with optional references to Leave Applications.
 
@@ -144,7 +144,7 @@ The core database design is modeled to reflect real-world university relationshi
 
 ---
 
-## 💾 Core SQL Operations
+##  Core SQL Operations
 
 All database interactions are protected via Prepared Statements. Below is a collection of the primary queries driving the system.
 
@@ -229,7 +229,7 @@ WHERE stu_regId = ? AND course_id = ?;
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 The directory organization is configured to keep assets, backend logic, stylesheets, and DB scripts separated cleanly:
 
@@ -270,7 +270,7 @@ The directory organization is configured to keep assets, backend logic, styleshe
 
 ---
 
-## ⚙️ Build & Deployment Pipeline
+##  Build & Deployment Pipeline
 
 Running the portal locally requires the standard XAMPP package (Apache & MySQL).
 
@@ -296,7 +296,7 @@ Running the portal locally requires the standard XAMPP package (Apache & MySQL).
 
 ---
 
-## 🤝 Development & Contribution Guidelines
+##  Development & Contribution Guidelines
 
 This repository was designed and engineered by **AhmadHassan-BTed (Ahmad Hassan)**. 
 
